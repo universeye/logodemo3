@@ -10,25 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
-            }
-            .padding()
+            PhotosPickerDemo()
             .tabItem {
                 Label("Home", systemImage: "house")
             }
             
-            CustumButtonStyle()
+            GridDemoView()
                 .tabItem {
-                    Label("Button", systemImage: "gearshape")
+                    Label("Grid", systemImage: "rectangle.grid.3x2.fill")
                 }
             
             NavigationStackDemoView()
                 .tabItem {
                     Label("Nav", systemImage: "questionmark.folder.fill")
+                }
+            
+            ViewThatFitsDemo()
+                .tabItem {
+                    Label("VTF", systemImage: "eye.trianglebadge.exclamationmark")
                 }
         }
         
