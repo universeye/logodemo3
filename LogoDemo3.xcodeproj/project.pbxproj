@@ -14,6 +14,10 @@
 		BF5ED97628F8F94C0014A1F1 /* LogoDemo3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED97528F8F94C0014A1F1 /* LogoDemo3Tests.swift */; };
 		BF5ED98028F8F94C0014A1F1 /* LogoDemo3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED97F28F8F94C0014A1F1 /* LogoDemo3UITests.swift */; };
 		BF5ED98228F8F94C0014A1F1 /* LogoDemo3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED98128F8F94C0014A1F1 /* LogoDemo3UITestsLaunchTests.swift */; };
+		BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */; };
+		BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */; };
+		BF60C16728FD663400E92FB1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C16628FD663400E92FB1 /* Company.swift */; };
+		BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C16828FD669500E92FB1 /* NavigationStackDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		BF5ED97B28F8F94C0014A1F1 /* LogoDemo3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoDemo3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5ED97F28F8F94C0014A1F1 /* LogoDemo3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoDemo3UITests.swift; sourceTree = "<group>"; };
 		BF5ED98128F8F94C0014A1F1 /* LogoDemo3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoDemo3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumButtonStyle.swift; sourceTree = "<group>"; };
+		BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyleExtension.swift; sourceTree = "<group>"; };
+		BF60C16628FD663400E92FB1 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		BF60C16828FD669500E92FB1 /* NavigationStackDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 			children = (
 				BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */,
 				BF5ED96628F8F94B0014A1F1 /* ContentView.swift */,
+				BFB5FB9228FE604500B7AA24 /* Extensions */,
+				BFB5FB9128FE603A00B7AA24 /* Views */,
+				BF60C16A28FE5B1600E92FB1 /* NavigationStack */,
 				BF5ED96828F8F94C0014A1F1 /* Assets.xcassets */,
 				BF5ED96A28F8F94C0014A1F1 /* Preview Content */,
 			);
@@ -125,6 +136,47 @@
 				BF5ED98128F8F94C0014A1F1 /* LogoDemo3UITestsLaunchTests.swift */,
 			);
 			path = LogoDemo3UITests;
+			sourceTree = "<group>";
+		};
+		BF60C16A28FE5B1600E92FB1 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				BFB5FB9028FE603000B7AA24 /* Views */,
+				BFB5FB8F28FE602B00B7AA24 /* Model */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		BFB5FB8F28FE602B00B7AA24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF60C16628FD663400E92FB1 /* Company.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFB5FB9028FE603000B7AA24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF60C16828FD669500E92FB1 /* NavigationStackDemoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFB5FB9128FE603A00B7AA24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFB5FB9228FE604500B7AA24 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */,
+				BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */,
+				BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */,
 				BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */,
+				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,
+				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
