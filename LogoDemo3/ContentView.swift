@@ -29,6 +29,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("VTF", systemImage: "eye.trianglebadge.exclamationmark")
                 }
+            
+            TasksView()
+                .tabItem {
+                    Label("Tasks", systemImage: "checkmark.square")
+                }
         }
         
     }

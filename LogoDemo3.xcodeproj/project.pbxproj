@@ -21,6 +21,11 @@
 		BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */; };
 		BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */; };
 		BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */; };
+		BFB50ED828FFD26500BCDA6A /* CollapseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED728FFD26500BCDA6A /* CollapseCellModel.swift */; };
+		BFB50EDA28FFD28800BCDA6A /* SubtaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED928FFD28800BCDA6A /* SubtaskCell.swift */; };
+		BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */; };
+		BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */; };
+		BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDemoView.swift; sourceTree = "<group>"; };
 		BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerDemo.swift; sourceTree = "<group>"; };
 		BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsDemo.swift; sourceTree = "<group>"; };
+		BFB50ED728FFD26500BCDA6A /* CollapseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseCellModel.swift; sourceTree = "<group>"; };
+		BFB50ED928FFD28800BCDA6A /* SubtaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtaskCell.swift; sourceTree = "<group>"; };
+		BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDemoView.swift; sourceTree = "<group>"; };
+		BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 			children = (
 				BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */,
 				BF5ED96628F8F94B0014A1F1 /* ContentView.swift */,
+				BFB50ED628FFD25100BCDA6A /*  CollapseCells */,
 				BFB5FB9228FE604500B7AA24 /* Extensions */,
 				BFB5FB9128FE603A00B7AA24 /* Views */,
 				BF60C16A28FE5B1600E92FB1 /* NavigationStack */,
@@ -153,6 +164,16 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		BFB50ED628FFD25100BCDA6A /*  CollapseCells */ = {
+			isa = PBXGroup;
+			children = (
+				BFB50ED728FFD26500BCDA6A /* CollapseCellModel.swift */,
+				BFB50ED928FFD28800BCDA6A /* SubtaskCell.swift */,
+				BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */,
+			);
+			path = " CollapseCells";
+			sourceTree = "<group>";
+		};
 		BFB5FB8F28FE602B00B7AA24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +197,7 @@
 				BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */,
 				BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */,
 				BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */,
+				BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */,
+				BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,9 +343,14 @@
 			files = (
 				BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */,
 				BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */,
+				BFB50ED828FFD26500BCDA6A /* CollapseCellModel.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */,
+				BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */,
+				BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */,
+				BFB50EDA28FFD28800BCDA6A /* SubtaskCell.swift in Sources */,
 				BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */,
+				BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */,
 				BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */,
 				BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */,
 				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,

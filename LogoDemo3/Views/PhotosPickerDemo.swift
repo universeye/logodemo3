@@ -24,7 +24,7 @@ struct PhotosPickerDemo: View {
                 selection: $selectedItems,
                 maxSelectionCount: 1,
                 matching: .images) {
-                Text("tap me")
+                Text("Select a Photo")
             }
             .buttonStyle(GrowingButton())
             .onChange(of: selectedItems) { newValue in
