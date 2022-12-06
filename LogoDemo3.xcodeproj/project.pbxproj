@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */; };
+		BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */; };
+		BF27BF64291A5232007BA722 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF63291A5232007BA722 /* DataController.swift */; };
 		BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */; };
 		BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED96628F8F94B0014A1F1 /* ContentView.swift */; };
 		BF5ED96928F8F94C0014A1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5ED96828F8F94C0014A1F1 /* Assets.xcassets */; };
@@ -26,6 +29,7 @@
 		BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */; };
 		BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */; };
 		BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */; };
+		BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE94821290FCB4300C9E597 /* LayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemo.swift; sourceTree = "<group>"; };
+		BF27BF61291A405E007BA722 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		BF27BF63291A5232007BA722 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BF5ED96128F8F94B0014A1F1 /* LogoDemo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoDemo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoDemo3App.swift; sourceTree = "<group>"; };
 		BF5ED96628F8F94B0014A1F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDemoView.swift; sourceTree = "<group>"; };
 		BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleExt.swift; sourceTree = "<group>"; };
+		BFE94821290FCB4300C9E597 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */,
+				BFE94820290FCB2300C9E597 /* NewLayoutAPI */,
 				BF5ED96628F8F94B0014A1F1 /* ContentView.swift */,
 				BFB50ED628FFD25100BCDA6A /*  CollapseCells */,
 				BFB5FB9228FE604500B7AA24 /* Extensions */,
@@ -198,6 +207,9 @@
 				BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */,
 				BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */,
 				BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */,
+				BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */,
+				BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */,
+				BF27BF63291A5232007BA722 /* DataController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +221,14 @@
 				BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFE94820290FCB2300C9E597 /* NewLayoutAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BFE94821290FCB4300C9E597 /* LayoutView.swift */,
+			);
+			path = NewLayoutAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,8 +363,10 @@
 			files = (
 				BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */,
 				BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */,
+				BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */,
 				BFB50ED828FFD26500BCDA6A /* CollapseCellModel.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
+				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
 				BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */,
 				BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */,
 				BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */,
@@ -352,6 +374,8 @@
 				BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */,
 				BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */,
 				BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */,
+				BF27BF64291A5232007BA722 /* DataController.swift in Sources */,
+				BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */,
 				BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */,
 				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,
 				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
@@ -679,6 +703,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF27BF61291A405E007BA722 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = BF27BF61291A405E007BA722 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF5ED95928F8F94B0014A1F1 /* Project object */;
 }
