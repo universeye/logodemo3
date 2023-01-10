@@ -21,6 +21,8 @@
 		BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */; };
 		BF60C16728FD663400E92FB1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C16628FD663400E92FB1 /* Company.swift */; };
 		BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C16828FD669500E92FB1 /* NavigationStackDemoView.swift */; };
+		BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2C48C293EF92300E98F80 /* KavSoftView.swift */; };
+		BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */; };
 		BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */; };
 		BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */; };
 		BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */; };
@@ -67,6 +69,8 @@
 		BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyleExtension.swift; sourceTree = "<group>"; };
 		BF60C16628FD663400E92FB1 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		BF60C16828FD669500E92FB1 /* NavigationStackDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemoView.swift; sourceTree = "<group>"; };
+		BFA2C48C293EF92300E98F80 /* KavSoftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavSoftView.swift; sourceTree = "<group>"; };
+		BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassView.swift; sourceTree = "<group>"; };
 		BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDemoView.swift; sourceTree = "<group>"; };
 		BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerDemo.swift; sourceTree = "<group>"; };
 		BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsDemo.swift; sourceTree = "<group>"; };
@@ -173,6 +177,15 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		BFA2C48E293EF99C00E98F80 /* KKavSoftTutorials */ = {
+			isa = PBXGroup;
+			children = (
+				BFA2C48C293EF92300E98F80 /* KavSoftView.swift */,
+				BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */,
+			);
+			path = KKavSoftTutorials;
+			sourceTree = "<group>";
+		};
 		BFB50ED628FFD25100BCDA6A /*  CollapseCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 				BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */,
 				BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */,
 				BF27BF63291A5232007BA722 /* DataController.swift */,
+				BFA2C48E293EF99C00E98F80 /* KKavSoftTutorials */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +381,7 @@
 				BFB50ED828FFD26500BCDA6A /* CollapseCellModel.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
+				BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */,
 				BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */,
 				BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */,
 				BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */,
@@ -378,6 +393,7 @@
 				BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */,
 				BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */,
 				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,
+				BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */,
 				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
