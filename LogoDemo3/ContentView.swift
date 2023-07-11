@@ -44,6 +44,11 @@ struct ContentView: View {
                     .tabItem {
                         Label("Tasks", systemImage: "checkmark.square")
                     }
+                
+                LazyVGridDemo()
+                    .tabItem {
+                        Label("LazyGrid", systemImage: "square.grid.3x3.fill")
+                    }
             }
         }
         
