@@ -18,6 +18,8 @@ struct LazyVGridDemo: View {
     @State var selected: Int = 0
     @State var selectedGridItemLayout: Int = 0
     @State var gridItemLayout: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    @State var presentGridItemLayoutCode = false
+    @State var gridItemLayoutCode: String = "[GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]"
     
     var body: some View {
         VStack {
@@ -42,14 +44,19 @@ struct LazyVGridDemo: View {
                     switch newValue {
                     case 0:
                         gridItemLayout = gridItemLayout1
+                        gridItemLayoutCode = "[GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]"
                     case 1:
                         gridItemLayout = gridItemLayout2
+                        gridItemLayoutCode = "[GridItem(.adaptive(minimum: 50))]"
                     case 2:
                         gridItemLayout = gridItemLayout3
+                        gridItemLayoutCode = "[GridItem(.fixed(100)), GridItem(.fixed(150))]"
                     case 3:
                         gridItemLayout = gridItemLayout4
+                        gridItemLayoutCode = "[GridItem(.fixed(150)), GridItem(.adaptive(minimum: 50))]"
                     default:
                         gridItemLayout = gridItemLayout1
+                        gridItemLayoutCode = "[GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]"
                     }
                 }
             })
@@ -94,7 +101,27 @@ struct LazyVGridDemo: View {
             Spacer()
             
         }
-        
+        .sheet(isPresented: $presentGridItemLayoutCode) {
+            AdaptiveView {
+                Text(gridItemLayoutCode)
+                    .fontWeight(.medium)
+                    .padding()
+            }
+            .presentationDetents([.medium, .large])
+        }
+        .toolbar {
+            Button {
+                presentGridItemLayoutCode.toggle()
+            } label: {
+                Image(systemName: "ellipsis.curlybraces")
+                    .font(.system(size: 13, weight: .heavy, design: .rounded))
+                    .foregroundColor(.black)
+                    .padding(10)
+                    .background(Color(UIColor.systemGray5))
+                    .cornerRadius(30)
+            }
+            
+        }
         
     }
 }
