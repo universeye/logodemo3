@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct KavSoftView: View {
-    private let newAPIs: [String] = ["Magnifying Glass"]
+    private let newAPIs: [String] = ["Magnifying Glass", "Rolling Counter"]
     
     
     var body: some View {
         NavigationView {
             List {
                 NavigationLink(newAPIs[0], destination: MagnifyingGlassView())
+                NavigationLink(newAPIs[1], destination: RollingCounterView())
             }
             .navigationTitle("KavSoft")
         }

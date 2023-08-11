@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1319482A84BAD700AA0EDD /* CrowdinSDK in Frameworks */ = {isa = PBXBuildFile; productRef = BF1319472A84BAD700AA0EDD /* CrowdinSDK */; };
+		BF1319562A85CEED00AA0EDD /* RollingCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1319552A85CEED00AA0EDD /* RollingCounterView.swift */; };
+		BF1319582A85CF5F00AA0EDD /* RollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1319572A85CF5F00AA0EDD /* RollingText.swift */; };
+		BF13195C2A85DA1900AA0EDD /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13195B2A85DA1900AA0EDD /* Double+Ext.swift */; };
 		BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */; };
 		BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */; };
 		BF27BF64291A5232007BA722 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF63291A5232007BA722 /* DataController.swift */; };
@@ -53,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1319552A85CEED00AA0EDD /* RollingCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingCounterView.swift; sourceTree = "<group>"; };
+		BF1319572A85CF5F00AA0EDD /* RollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingText.swift; sourceTree = "<group>"; };
+		BF13195B2A85DA1900AA0EDD /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemo.swift; sourceTree = "<group>"; };
 		BF27BF61291A405E007BA722 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		BF27BF63291A5232007BA722 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1319482A84BAD700AA0EDD /* CrowdinSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +209,8 @@
 			children = (
 				BFA2C48C293EF92300E98F80 /* KavSoftView.swift */,
 				BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */,
+				BF1319552A85CEED00AA0EDD /* RollingCounterView.swift */,
+				BF1319572A85CF5F00AA0EDD /* RollingText.swift */,
 			);
 			path = KavSoftTutorials;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 			children = (
 				BF5ED99028F8FA060014A1F1 /* ButtonStyleExtension.swift */,
 				BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */,
+				BF13195B2A85DA1900AA0EDD /* Double+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +291,9 @@
 			dependencies = (
 			);
 			name = LogoDemo3;
+			packageProductDependencies = (
+				BF1319472A84BAD700AA0EDD /* CrowdinSDK */,
+			);
 			productName = LogoDemo3;
 			productReference = BF5ED96128F8F94B0014A1F1 /* LogoDemo3.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +366,9 @@
 				Base,
 			);
 			mainGroup = BF5ED95828F8F94B0014A1F1;
+			packageReferences = (
+				BF1319462A84BAD700AA0EDD /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
+			);
 			productRefGroup = BF5ED96228F8F94B0014A1F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,9 +413,11 @@
 			files = (
 				BF4F3BB42A5D32D600755BC8 /* LazyVGridDemo.swift in Sources */,
 				BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */,
+				BF13195C2A85DA1900AA0EDD /* Double+Ext.swift in Sources */,
 				BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */,
 				BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */,
 				BFB50ED828FFD26500BCDA6A /* CollapseCellModel.swift in Sources */,
+				BF1319562A85CEED00AA0EDD /* RollingCounterView.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
 				BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */,
@@ -415,6 +434,7 @@
 				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,
 				BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */,
 				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
+				BF1319582A85CF5F00AA0EDD /* RollingText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +759,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF1319462A84BAD700AA0EDD /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crowdin/mobile-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF1319472A84BAD700AA0EDD /* CrowdinSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF1319462A84BAD700AA0EDD /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */;
+			productName = CrowdinSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */ = {
