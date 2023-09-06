@@ -9,8 +9,9 @@ import SwiftUI
 
 struct GlassMorphismCardView: View {
     @Binding var blurView: UIVisualEffectView
-    @State private var defaultBlurRadius: CGFloat = 0
-    @State private var defaultSaturationAmount: CGFloat = 0
+    @Binding var defaultBlurRadius: CGFloat
+    @Binding var defaultSaturationAmount: CGFloat
+    @Binding var isShow: Bool
     
     var body: some View {
         ZStack {
@@ -50,6 +51,8 @@ struct GlassMorphismCardView: View {
         .shadow(color: .black.opacity(0.15), radius: 5, x: 10, y: -10)
         .overlay(content: {
             CardContentView()
+                .opacity(isShow ? 1 : 0)
+                .animation(.easeIn(duration: 0.5), value: isShow)
         })
         .padding(.horizontal, 25)
         .frame(height: 220)

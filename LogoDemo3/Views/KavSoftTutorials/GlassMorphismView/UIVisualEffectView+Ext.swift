@@ -45,7 +45,10 @@ extension UIVisualEffectView {
     
     func applyNewEffects() {
         //Updating the Backdrop view with the New Filter Updates
-        backDrop?.perform(Selector(("applyRequestedFilterEffects")))
+        UIVisualEffectView.animate(withDuration: 0.5) {
+            self.backDrop?.perform(Selector(("applyRequestedFilterEffects")))
+        }
+        
     }
     
     var saturationAmount: CGFloat {

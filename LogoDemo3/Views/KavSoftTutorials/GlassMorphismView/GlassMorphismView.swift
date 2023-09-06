@@ -9,7 +9,8 @@ import SwiftUI
 
 struct GlassMorphismView: View {
     @State private var blurView: UIVisualEffectView = .init()
-    
+    @State private var defaultBlurRadius: CGFloat = 0
+    @State private var defaultSaturationAmount: CGFloat = 0
     @State private var isShow: Bool = false
     
     var body: some View {
@@ -34,11 +35,12 @@ struct GlassMorphismView: View {
                 .frame(width: 70, height: 70)
                 .offset(x: -40, y: -100)
             
-            GlassMorphismCardView(blurView: $blurView)
+            GlassMorphismCardView(blurView: $blurView, defaultBlurRadius: $defaultBlurRadius, defaultSaturationAmount: $defaultSaturationAmount, isShow: $isShow)
             
             Toggle("Activate Glass Morphism", isOn: $isShow)
                 .onChange(of: isShow) { newValue in
-                    blurView.gaussianBlurRadius = (isShow ? 10 : )
+                    blurView.gaussianBlurRadius = (isShow ? 10 : defaultBlurRadius)
+                    blurView.saturationAmount = (isShow ? 1.8 : defaultSaturationAmount)
                 }
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .padding(15)
