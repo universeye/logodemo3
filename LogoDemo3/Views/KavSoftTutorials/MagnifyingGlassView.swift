@@ -21,9 +21,12 @@ struct MagnifyingGlassView: View {
                 Image("example1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
                     .frame(width: size.width, height: size.height)
+                    
                 ///Adding Magnification Modifier
                     .magnificationEffect(scale, rotation, self.size, .white)
+                
             }
             .padding(50)
             .contentShape(Rectangle())
