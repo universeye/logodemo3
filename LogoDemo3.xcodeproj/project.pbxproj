@@ -44,6 +44,7 @@
 		BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */; };
 		BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */; };
 		BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */; };
+		BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */; };
 		BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE94821290FCB4300C9E597 /* LayoutView.swift */; };
 		BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */; };
 		BFEF9F7A2AB0017F007B4107 /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F792AB0017F007B4107 /* TagLayout.swift */; };
@@ -106,6 +107,7 @@
 		BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDemoView.swift; sourceTree = "<group>"; };
 		BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleExt.swift; sourceTree = "<group>"; };
+		BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableGridView.swift; sourceTree = "<group>"; };
 		BFE94821290FCB4300C9E597 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTagView.swift; sourceTree = "<group>"; };
 		BFEF9F792AB0017F007B4107 /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				BFEF9F782AB00174007B4107 /* AnimatedTag */,
 				BF74FB122A889DFB001F5555 /* Rolling Counter */,
 				BF74FB112A889DF0001F5555 /* GlassMorphismView */,
+				BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */,
 			);
 			path = KavSoftTutorials;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				BF74FB0E2A8788D0001F5555 /* UIVisualEffectView+Ext.swift in Sources */,
 				BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
+				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
 				BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
 				BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */,
