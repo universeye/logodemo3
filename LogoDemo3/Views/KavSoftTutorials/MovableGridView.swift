@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovableGridView: View {
     @State private var colors: [Color] = [.red, .blue, .purple, .yellow, .black, .indigo, .cyan, .brown, .mint, .orange, .pink, .secondary]
+    @State private var images: [UIImage] = [UIImage(named:"watchos10")!]
     @State private var dragginItem: Color?
     
     var body: some View {

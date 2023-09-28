@@ -34,6 +34,8 @@
 		BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB132A88AE35001F5555 /* NSObject+Ext.swift */; };
 		BF74FB182A893485001F5555 /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB172A893485001F5555 /* CardContentView.swift */; };
 		BF74FB1A2A8935E4001F5555 /* CustumModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB192A8935E4001F5555 /* CustumModifier.swift */; };
+		BF7E14222AC50D3A00025D1B /* MultiplePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */; };
+		BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */; };
 		BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2C48C293EF92300E98F80 /* KavSoftView.swift */; };
 		BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */; };
 		BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */; };
@@ -97,6 +99,8 @@
 		BF74FB132A88AE35001F5555 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
 		BF74FB172A893485001F5555 /* CardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
 		BF74FB192A8935E4001F5555 /* CustumModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumModifier.swift; sourceTree = "<group>"; };
+		BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotosView.swift; sourceTree = "<group>"; };
+		BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiImagePicker.swift; sourceTree = "<group>"; };
 		BFA2C48C293EF92300E98F80 /* KavSoftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavSoftView.swift; sourceTree = "<group>"; };
 		BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassView.swift; sourceTree = "<group>"; };
 		BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDemoView.swift; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 				BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */,
 				BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */,
 				BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */,
+				BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */,
+				BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */,
 				BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */,
 				BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */,
 				BF4F3BB32A5D32D600755BC8 /* LazyVGridDemo.swift */,
@@ -479,6 +485,7 @@
 				BF1319562A85CEED00AA0EDD /* RollingCounterView.swift in Sources */,
 				BF74FB0E2A8788D0001F5555 /* UIVisualEffectView+Ext.swift in Sources */,
 				BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */,
+				BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
 				BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */,
@@ -491,6 +498,7 @@
 				BF74FB082A874FAC001F5555 /* GlassMorphismView.swift in Sources */,
 				BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */,
 				BFB50EDA28FFD28800BCDA6A /* SubtaskCell.swift in Sources */,
+				BF7E14222AC50D3A00025D1B /* MultiplePhotosView.swift in Sources */,
 				BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */,
 				BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */,
 				BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */,

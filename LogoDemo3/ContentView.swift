@@ -49,6 +49,15 @@ struct ContentView: View {
                     .tabItem {
                         Label("LazyGrid", systemImage: "square.grid.3x3.fill")
                     }
+                PhotosPickerDemo()
+                    .tabItem {
+                        Label("PhotosPicker", systemImage: "photo.artframe")
+                    }
+                MultiplePhotosView()
+                    .tabItem {
+                        Label("MultiplePhotos", systemImage: "photo.stack")
+                    }
+
             }
         }
         
