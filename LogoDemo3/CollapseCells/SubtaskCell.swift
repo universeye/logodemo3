@@ -34,7 +34,7 @@ struct EmptySubtaskCell: View {
 struct TaskCell: View {
     @State private var isExpanded: Bool = false
     
-    let task: Task
+    let task: Tasker
     
     var body: some View {
         content

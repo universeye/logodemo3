@@ -57,6 +57,15 @@ struct ContentView: View {
                     .tabItem {
                         Label("MultiplePhotos", systemImage: "photo.stack")
                     }
+                LeasingOptions()
+                    .tabItem {
+                        Label("LeasingOptions", systemImage: "paperclip")
+                    }
+                
+                CollapsibleDemoView()
+                    .tabItem {
+                        Label("CollapsibleDemoView", systemImage: "square.grid.3x1.fill.below.line.grid.1x2")
+                    }
 
             }
         }

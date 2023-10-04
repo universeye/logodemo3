@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct TasksView: View {
-    private let tasks: [Task] = [
-            Task(title: "Create playground", subtask: []),
-            Task(title: "Write article", subtask: []),
-            Task(
+    private let tasks: [Tasker] = [
+            Tasker(title: "Create playground", subtask: []),
+            Tasker(title: "Write article", subtask: []),
+            Tasker(
                 title: "Prepare assets",
                 subtask: [
                     Subtask(title: "Cover image"),
                     Subtask(title: "Screenshots")
                 ]
             ),
-            Task(title: "Publish article", subtask: [])
+            Tasker(title: "Publish article", subtask: [])
         ]
         
         var body: some View {

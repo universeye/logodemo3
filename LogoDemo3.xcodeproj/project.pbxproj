@@ -47,6 +47,9 @@
 		BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */; };
 		BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */; };
 		BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */; };
+		BFCA21A42ACBC5F80098298E /* LeasingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */; };
+		BFCA21CF2ACD43D80098298E /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */; };
+		BFCA21D12ACD45190098298E /* ChangeAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */; };
 		BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE94821290FCB4300C9E597 /* LayoutView.swift */; };
 		BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */; };
 		BFEF9F7A2AB0017F007B4107 /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F792AB0017F007B4107 /* TagLayout.swift */; };
@@ -112,6 +115,9 @@
 		BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDemoView.swift; sourceTree = "<group>"; };
 		BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleExt.swift; sourceTree = "<group>"; };
 		BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableGridView.swift; sourceTree = "<group>"; };
+		BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasingOptions.swift; sourceTree = "<group>"; };
+		BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
+		BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconView.swift; sourceTree = "<group>"; };
 		BFE94821290FCB4300C9E597 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTagView.swift; sourceTree = "<group>"; };
 		BFEF9F792AB0017F007B4107 /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
@@ -296,13 +302,14 @@
 		BFB5FB9128FE603A00B7AA24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */,
+				BFC28CAA2ACD47AA00059544 /* ChangeAppIcon */,
+				BFCA21C72ACD16060098298E /* Helper */,
 				BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */,
 				BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */,
 				BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */,
-				BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */,
 				BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */,
 				BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */,
+				BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */,
 				BF4F3BB32A5D32D600755BC8 /* LazyVGridDemo.swift */,
 				BFE94820290FCB2300C9E597 /* NewLayoutAPI */,
 				BF4F3BB52A5D35B400755BC8 /* CoreDataDemo */,
@@ -319,6 +326,24 @@
 				BF13195B2A85DA1900AA0EDD /* Double+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFC28CAA2ACD47AA00059544 /* ChangeAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */,
+				BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */,
+			);
+			path = ChangeAppIcon;
+			sourceTree = "<group>";
+		};
+		BFCA21C72ACD16060098298E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */,
+				BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		BFE94820290FCB2300C9E597 /* NewLayoutAPI */ = {
@@ -476,6 +501,7 @@
 			files = (
 				BF4F3BB42A5D32D600755BC8 /* LazyVGridDemo.swift in Sources */,
 				BFB50ED528FED0BB00BCDA6A /* ViewThatFitsDemo.swift in Sources */,
+				BFCA21A42ACBC5F80098298E /* LeasingOptions.swift in Sources */,
 				BF74FB0C2A876346001F5555 /* CustumBlurView.swift in Sources */,
 				BF74FB0A2A8762EC001F5555 /* GlassMorphismCardView.swift in Sources */,
 				BF13195C2A85DA1900AA0EDD /* Double+Ext.swift in Sources */,
@@ -488,6 +514,7 @@
 				BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
+				BFCA21D12ACD45190098298E /* ChangeAppIconView.swift in Sources */,
 				BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
 				BFA2C490293EF9BA00E98F80 /* MagnifyingGlassView.swift in Sources */,
@@ -507,6 +534,7 @@
 				BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */,
 				BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */,
 				BF60C16728FD663400E92FB1 /* Company.swift in Sources */,
+				BFCA21CF2ACD43D80098298E /* ChangeAppIconViewModel.swift in Sources */,
 				BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */,
 				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
 				BF1319582A85CF5F00AA0EDD /* RollingText.swift in Sources */,
@@ -597,7 +625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -651,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -664,6 +692,7 @@
 		BF5ED98628F8F94C0014A1F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Black";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -693,6 +722,7 @@
 		BF5ED98728F8F94C0014A1F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Black";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
