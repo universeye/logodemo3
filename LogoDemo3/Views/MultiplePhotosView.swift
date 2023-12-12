@@ -33,6 +33,7 @@ struct MultiplePhotosView: View {
             }) {
                 Text("Select Photos")
             }
+            .buttonStyle(GrowingButton())
         }
         .sheet(isPresented: $isImagePickerPresented) {
             MultiImagePicker(selectedImages: self.$selectedImages)

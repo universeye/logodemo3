@@ -58,7 +58,7 @@ struct AnimatedTagView: View {
             Text(tag)
                 .font(.callout)
                 .fontWeight(.semibold)
-            
+                .minimumScaleFactor(0.5)
             Image(systemName: icon)
         }
         .frame(height: 35)

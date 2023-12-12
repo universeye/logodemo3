@@ -7,18 +7,42 @@
 
 import SwiftUI
 
+enum KavSoftViewType: String, CaseIterable {
+    case magnifyingGlass
+    case rollingCounter
+    case glassMorphismView
+    case animatedTag
+    case movableGrid
+    case complexAnimationSynchronizedScrollViews
+}
+
 struct KavSoftView: View {
-    private let newAPIs: [String] = ["Magnifying Glass", "Rolling Counter", "GlassMorphismView", "Animated Tag", "Movable Grid"]
-    
+    @State private var path: [KavSoftViewType] = []
     
     var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(newAPIs[0], destination: MagnifyingGlassView())
-                NavigationLink(newAPIs[1], destination: RollingCounterView())
-                NavigationLink(newAPIs[2], destination: GlassMorphismView())
-                NavigationLink(newAPIs[3], destination: AnimatedTagView())
-                NavigationLink(newAPIs[4], destination: MovableGridView())
+        NavigationStack(path: $path) {
+            List(KavSoftViewType.allCases, id: \.self) { kavSoftViewType in
+                NavigationLink(kavSoftViewType.rawValue, value: kavSoftViewType)
+            }
+            .navigationDestination(for: KavSoftViewType.self) { kavSoftViewType in
+                switch kavSoftViewType {
+                case .magnifyingGlass:
+                    MagnifyingGlassView()
+                case .rollingCounter:
+                    RollingCounterView()
+                case .glassMorphismView:
+                    GlassMorphismView()
+                        .preferredColorScheme(.dark)
+                        .navigationTitle(kavSoftViewType.rawValue)
+                case .animatedTag:
+                    AnimatedTagView()
+                        .navigationTitle(kavSoftViewType.rawValue)
+                case .movableGrid:
+                    MovableGridView()
+                case .complexAnimationSynchronizedScrollViews:
+                    ComplexAnimationSynchronizedScrollView()
+                        .navigationTitle(kavSoftViewType.rawValue)
+                }
             }
             .navigationTitle("KavSoft")
         }

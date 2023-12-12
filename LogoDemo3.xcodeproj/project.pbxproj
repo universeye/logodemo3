@@ -14,6 +14,7 @@
 		BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */; };
 		BF27BF62291A405E007BA722 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF60291A405E007BA722 /* Bookworm.xcdatamodeld */; };
 		BF27BF64291A5232007BA722 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27BF63291A5232007BA722 /* DataController.swift */; };
+		BF4918B42B27083A00A9FFEB /* ComplexAnimationSynchronizedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4918B32B27083A00A9FFEB /* ComplexAnimationSynchronizedScrollView.swift */; };
 		BF4F3BB42A5D32D600755BC8 /* LazyVGridDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F3BB32A5D32D600755BC8 /* LazyVGridDemo.swift */; };
 		BF5ED96528F8F94B0014A1F1 /* LogoDemo3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */; };
 		BF5ED96728F8F94B0014A1F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED96628F8F94B0014A1F1 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 		BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */; };
 		BFB50EDE28FFDB7B00BCDA6A /* CollapsibleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */; };
 		BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */; };
+		BFC28CD02ADAFE4F00059544 /* PhotosGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC28CCF2ADAFE4F00059544 /* PhotosGridVC.swift */; };
 		BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */; };
 		BFCA21A42ACBC5F80098298E /* LeasingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */; };
 		BFCA21CF2ACD43D80098298E /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */; };
@@ -79,6 +81,7 @@
 		BF27BF5E291A3FB7007BA722 /* CoreDataDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemo.swift; sourceTree = "<group>"; };
 		BF27BF61291A405E007BA722 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		BF27BF63291A5232007BA722 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		BF4918B32B27083A00A9FFEB /* ComplexAnimationSynchronizedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexAnimationSynchronizedScrollView.swift; sourceTree = "<group>"; };
 		BF4F3BB32A5D32D600755BC8 /* LazyVGridDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridDemo.swift; sourceTree = "<group>"; };
 		BF5ED96128F8F94B0014A1F1 /* LogoDemo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoDemo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5ED96428F8F94B0014A1F1 /* LogoDemo3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoDemo3App.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		BFB50EDB28FFD32C00BCDA6A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDemoView.swift; sourceTree = "<group>"; };
 		BFB50EDF28FFDB9D00BCDA6A /* CollapsibleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleExt.swift; sourceTree = "<group>"; };
+		BFC28CCF2ADAFE4F00059544 /* PhotosGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGridVC.swift; sourceTree = "<group>"; };
 		BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableGridView.swift; sourceTree = "<group>"; };
 		BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasingOptions.swift; sourceTree = "<group>"; };
 		BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
@@ -149,6 +153,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF4918B52B2709E600A9FFEB /* ComplexAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BF4918B32B27083A00A9FFEB /* ComplexAnimationSynchronizedScrollView.swift */,
+			);
+			path = ComplexAnimation;
+			sourceTree = "<group>";
+		};
 		BF4F3BB52A5D35B400755BC8 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,7 @@
 				BF74FB122A889DFB001F5555 /* Rolling Counter */,
 				BF74FB112A889DF0001F5555 /* GlassMorphismView */,
 				BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */,
+				BF4918B52B2709E600A9FFEB /* ComplexAnimation */,
 			);
 			path = KavSoftTutorials;
 			sourceTree = "<group>";
@@ -314,6 +327,7 @@
 				BFE94820290FCB2300C9E597 /* NewLayoutAPI */,
 				BF4F3BB52A5D35B400755BC8 /* CoreDataDemo */,
 				BFA2C48E293EF99C00E98F80 /* KavSoftTutorials */,
+				BFC28CCF2ADAFE4F00059544 /* PhotosGridVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -504,6 +518,7 @@
 				BFCA21A42ACBC5F80098298E /* LeasingOptions.swift in Sources */,
 				BF74FB0C2A876346001F5555 /* CustumBlurView.swift in Sources */,
 				BF74FB0A2A8762EC001F5555 /* GlassMorphismCardView.swift in Sources */,
+				BF4918B42B27083A00A9FFEB /* ComplexAnimationSynchronizedScrollView.swift in Sources */,
 				BF13195C2A85DA1900AA0EDD /* Double+Ext.swift in Sources */,
 				BFB50ED128FEB0B200BCDA6A /* GridDemoView.swift in Sources */,
 				BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */,
@@ -514,6 +529,7 @@
 				BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
+				BFC28CD02ADAFE4F00059544 /* PhotosGridVC.swift in Sources */,
 				BFCA21D12ACD45190098298E /* ChangeAppIconView.swift in Sources */,
 				BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
