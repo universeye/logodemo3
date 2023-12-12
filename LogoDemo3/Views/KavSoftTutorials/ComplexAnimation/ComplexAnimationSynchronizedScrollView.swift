@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ComplexAnimationSynchronizedScrollView: View {
     var body: some View {
-        Text("ComplexAnimationSynchronizedScrollView")
+        HStack {
+            Image("star")
+            Text("ComplexAnimationSynchronizedScrollView")
+        }
     }
 }
 
