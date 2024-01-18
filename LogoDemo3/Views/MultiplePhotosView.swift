@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct MultiplePhotosView: View {
-    @State private var selectedImages: [IdentifiableImage] = []
     @State private var isImagePickerPresented: Bool = false
+    @StateObject var viewModel = ImageListViewModel()
     
     var body: some View {
         VStack {
-            if !selectedImages.isEmpty {
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.flexible())], spacing: 10) {
-                        ForEach(selectedImages, id: \.id) { image in
-                            image.image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 100)
-                        }
-                    }
+            List {
+                ForEach(viewModel.idImages, id: \.id) { image in
+                    image.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 100)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
-            } else {
-                Text("No images selected")
+                .onMove(perform: viewModel.move)
             }
+            .environment(\.editMode, .constant(.active))
+            
             
             Button(action: {
                 self.isImagePickerPresented.toggle()
@@ -36,7 +34,7 @@ struct MultiplePhotosView: View {
             .buttonStyle(GrowingButton())
         }
         .sheet(isPresented: $isImagePickerPresented) {
-            MultiImagePicker(selectedImages: self.$selectedImages)
+            MultiImagePicker(selectedImages: $viewModel.idImages)
         }
     }
     

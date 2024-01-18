@@ -66,7 +66,19 @@ struct ContentView: View {
                     .tabItem {
                         Label("CollapsibleDemoView", systemImage: "square.grid.3x1.fill.below.line.grid.1x2")
                     }
-
+                SwitchAnimationView()
+                    .tabItem {
+                        Label("SwitchAnimation", systemImage: "doc.richtext.fill")
+                    }
+                MarUpEditor()
+                    .tabItem {
+                        Label("MarUpEditor", systemImage: "pencil.and.ellipsis.rectangle")
+                    }
+                
+                ExtensionDemo()
+                    .tabItem {
+                        Label("ExtensionDemo", systemImage: "studentdesk")
+                    }
             }
         }
         

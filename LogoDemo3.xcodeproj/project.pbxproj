@@ -35,6 +35,9 @@
 		BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB132A88AE35001F5555 /* NSObject+Ext.swift */; };
 		BF74FB182A893485001F5555 /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB172A893485001F5555 /* CardContentView.swift */; };
 		BF74FB1A2A8935E4001F5555 /* CustumModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74FB192A8935E4001F5555 /* CustumModifier.swift */; };
+		BF78BBDF2B4BCCE800DD0D59 /* SwitchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78BBDE2B4BCCE800DD0D59 /* SwitchAnimationView.swift */; };
+		BF78BBE12B4BDD0500DD0D59 /* MarUpEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78BBE02B4BDD0500DD0D59 /* MarUpEditor.swift */; };
+		BF78BBE42B4BDD4D00DD0D59 /* MarkupEditor in Frameworks */ = {isa = PBXBuildFile; productRef = BF78BBE32B4BDD4D00DD0D59 /* MarkupEditor */; };
 		BF7E14222AC50D3A00025D1B /* MultiplePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */; };
 		BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */; };
 		BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2C48C293EF92300E98F80 /* KavSoftView.swift */; };
@@ -52,9 +55,13 @@
 		BFCA21A42ACBC5F80098298E /* LeasingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */; };
 		BFCA21CF2ACD43D80098298E /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */; };
 		BFCA21D12ACD45190098298E /* ChangeAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */; };
+		BFCFD9B12B4D1856002B775B /* ExtensionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCFD9B02B4D1856002B775B /* ExtensionDemo.swift */; };
+		BFE268162B567D4B00D9D23E /* AppThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE268152B567D4B00D9D23E /* AppThemeSwitcherView.swift */; };
+		BFE268182B5681ED00D9D23E /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE268172B5681ED00D9D23E /* CheckBoxView.swift */; };
 		BFE94822290FCB4300C9E597 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE94821290FCB4300C9E597 /* LayoutView.swift */; };
 		BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */; };
 		BFEF9F7A2AB0017F007B4107 /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF9F792AB0017F007B4107 /* TagLayout.swift */; };
+		BFFEEE9F2B302B5A00026EEE /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFEEE9E2B302B5A00026EEE /* ImageListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +112,8 @@
 		BF74FB132A88AE35001F5555 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
 		BF74FB172A893485001F5555 /* CardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
 		BF74FB192A8935E4001F5555 /* CustumModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumModifier.swift; sourceTree = "<group>"; };
+		BF78BBDE2B4BCCE800DD0D59 /* SwitchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAnimationView.swift; sourceTree = "<group>"; };
+		BF78BBE02B4BDD0500DD0D59 /* MarUpEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarUpEditor.swift; sourceTree = "<group>"; };
 		BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotosView.swift; sourceTree = "<group>"; };
 		BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiImagePicker.swift; sourceTree = "<group>"; };
 		BFA2C48C293EF92300E98F80 /* KavSoftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavSoftView.swift; sourceTree = "<group>"; };
@@ -122,9 +131,13 @@
 		BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeasingOptions.swift; sourceTree = "<group>"; };
 		BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
 		BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconView.swift; sourceTree = "<group>"; };
+		BFCFD9B02B4D1856002B775B /* ExtensionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDemo.swift; sourceTree = "<group>"; };
+		BFE268152B567D4B00D9D23E /* AppThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeSwitcherView.swift; sourceTree = "<group>"; };
+		BFE268172B5681ED00D9D23E /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		BFE94821290FCB4300C9E597 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		BFEF9F762AAFFDDE007B4107 /* AnimatedTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTagView.swift; sourceTree = "<group>"; };
 		BFEF9F792AB0017F007B4107 /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
+		BFFEEE9E2B302B5A00026EEE /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1319482A84BAD700AA0EDD /* CrowdinSDK in Frameworks */,
+				BF78BBE42B4BDD4D00DD0D59 /* MarkupEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +291,12 @@
 			children = (
 				BFA2C48C293EF92300E98F80 /* KavSoftView.swift */,
 				BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */,
+				BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */,
+				BFE268152B567D4B00D9D23E /* AppThemeSwitcherView.swift */,
 				BFEF9F782AB00174007B4107 /* AnimatedTag */,
 				BF74FB122A889DFB001F5555 /* Rolling Counter */,
-				BF74FB112A889DF0001F5555 /* GlassMorphismView */,
-				BFC8F67D2ABED1C100EC4D8A /* MovableGridView.swift */,
 				BF4918B52B2709E600A9FFEB /* ComplexAnimation */,
+				BF74FB112A889DF0001F5555 /* GlassMorphismView */,
 			);
 			path = KavSoftTutorials;
 			sourceTree = "<group>";
@@ -320,6 +335,7 @@
 				BFB50ED028FEB0B200BCDA6A /* GridDemoView.swift */,
 				BFB50ED228FEB52A00BCDA6A /* PhotosPickerDemo.swift */,
 				BF7E14212AC50D3A00025D1B /* MultiplePhotosView.swift */,
+				BFFEEE9E2B302B5A00026EEE /* ImageListViewModel.swift */,
 				BFB50ED428FED0BB00BCDA6A /* ViewThatFitsDemo.swift */,
 				BFB50EDD28FFDB7B00BCDA6A /* CollapsibleDemoView.swift */,
 				BFCA21A32ACBC5F80098298E /* LeasingOptions.swift */,
@@ -328,6 +344,9 @@
 				BF4F3BB52A5D35B400755BC8 /* CoreDataDemo */,
 				BFA2C48E293EF99C00E98F80 /* KavSoftTutorials */,
 				BFC28CCF2ADAFE4F00059544 /* PhotosGridVC.swift */,
+				BF78BBDE2B4BCCE800DD0D59 /* SwitchAnimationView.swift */,
+				BF78BBE02B4BDD0500DD0D59 /* MarUpEditor.swift */,
+				BFCFD9B02B4D1856002B775B /* ExtensionDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +366,7 @@
 			children = (
 				BFCA21CE2ACD43D80098298E /* ChangeAppIconViewModel.swift */,
 				BFCA21D02ACD45190098298E /* ChangeAppIconView.swift */,
+				BFE268172B5681ED00D9D23E /* CheckBoxView.swift */,
 			);
 			path = ChangeAppIcon;
 			sourceTree = "<group>";
@@ -395,6 +415,7 @@
 			name = LogoDemo3;
 			packageProductDependencies = (
 				BF1319472A84BAD700AA0EDD /* CrowdinSDK */,
+				BF78BBE32B4BDD4D00DD0D59 /* MarkupEditor */,
 			);
 			productName = LogoDemo3;
 			productReference = BF5ED96128F8F94B0014A1F1 /* LogoDemo3.app */;
@@ -470,6 +491,7 @@
 			mainGroup = BF5ED95828F8F94B0014A1F1;
 			packageReferences = (
 				BF1319462A84BAD700AA0EDD /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
+				BF78BBE22B4BDD4D00DD0D59 /* XCRemoteSwiftPackageReference "MarkupEditor" */,
 			);
 			productRefGroup = BF5ED96228F8F94B0014A1F1 /* Products */;
 			projectDirPath = "";
@@ -528,8 +550,10 @@
 				BFEF9F772AAFFDDE007B4107 /* AnimatedTagView.swift in Sources */,
 				BF7E14242AC50D7800025D1B /* MultiImagePicker.swift in Sources */,
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
+				BFE268162B567D4B00D9D23E /* AppThemeSwitcherView.swift in Sources */,
 				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
 				BFC28CD02ADAFE4F00059544 /* PhotosGridVC.swift in Sources */,
+				BF78BBDF2B4BCCE800DD0D59 /* SwitchAnimationView.swift in Sources */,
 				BFCA21D12ACD45190098298E /* ChangeAppIconView.swift in Sources */,
 				BF74FB142A88AE35001F5555 /* NSObject+Ext.swift in Sources */,
 				BF27BF5F291A3FB7007BA722 /* CoreDataDemo.swift in Sources */,
@@ -542,8 +566,11 @@
 				BFB50EE028FFDB9D00BCDA6A /* CollapsibleExt.swift in Sources */,
 				BFB50EDA28FFD28800BCDA6A /* SubtaskCell.swift in Sources */,
 				BF7E14222AC50D3A00025D1B /* MultiplePhotosView.swift in Sources */,
+				BFE268182B5681ED00D9D23E /* CheckBoxView.swift in Sources */,
 				BF5ED98F28F8F9BF0014A1F1 /* CustumButtonStyle.swift in Sources */,
+				BF78BBE12B4BDD0500DD0D59 /* MarUpEditor.swift in Sources */,
 				BFB50EDC28FFD32C00BCDA6A /* TasksView.swift in Sources */,
+				BFFEEE9F2B302B5A00026EEE /* ImageListViewModel.swift in Sources */,
 				BF60C16928FD669500E92FB1 /* NavigationStackDemoView.swift in Sources */,
 				BF27BF64291A5232007BA722 /* DataController.swift in Sources */,
 				BFEF9F7A2AB0017F007B4107 /* TagLayout.swift in Sources */,
@@ -554,6 +581,7 @@
 				BFA2C48D293EF92300E98F80 /* KavSoftView.swift in Sources */,
 				BF5ED99128F8FA060014A1F1 /* ButtonStyleExtension.swift in Sources */,
 				BF1319582A85CF5F00AA0EDD /* RollingText.swift in Sources */,
+				BFCFD9B12B4D1856002B775B /* ExtensionDemo.swift in Sources */,
 				BF74FB1A2A8935E4001F5555 /* CustumModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -891,6 +919,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		BF78BBE22B4BDD4D00DD0D59 /* XCRemoteSwiftPackageReference "MarkupEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/MarkupEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -898,6 +934,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF1319462A84BAD700AA0EDD /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */;
 			productName = CrowdinSDK;
+		};
+		BF78BBE32B4BDD4D00DD0D59 /* MarkupEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF78BBE22B4BDD4D00DD0D59 /* XCRemoteSwiftPackageReference "MarkupEditor" */;
+			productName = MarkupEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 

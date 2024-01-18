@@ -14,10 +14,12 @@ enum KavSoftViewType: String, CaseIterable {
     case animatedTag
     case movableGrid
     case complexAnimationSynchronizedScrollViews
+    case appThemeSwitcher
 }
 
 struct KavSoftView: View {
     @State private var path: [KavSoftViewType] = []
+    @Environment(\.colorScheme) private var scheme
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -41,6 +43,9 @@ struct KavSoftView: View {
                     MovableGridView()
                 case .complexAnimationSynchronizedScrollViews:
                     ComplexAnimationSynchronizedScrollView()
+                        .navigationTitle(kavSoftViewType.rawValue)
+                case .appThemeSwitcher:
+                    AppThemeSwitcherView(scheme: scheme)
                         .navigationTitle(kavSoftViewType.rawValue)
                 }
             }
