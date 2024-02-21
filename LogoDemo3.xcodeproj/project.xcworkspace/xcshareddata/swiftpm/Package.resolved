@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "musadorakit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rryam/MusadoraKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f5f64079a4bd5b815be77cb7cd977756ac374b65"
+      }
+    },
+    {
       "identity" : "starscream",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream.git",

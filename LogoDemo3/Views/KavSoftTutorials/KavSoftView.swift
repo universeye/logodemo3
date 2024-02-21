@@ -15,6 +15,7 @@ enum KavSoftViewType: String, CaseIterable {
     case movableGrid
     case complexAnimationSynchronizedScrollViews
     case appThemeSwitcher
+    case custumSwipeAction
 }
 
 struct KavSoftView: View {
@@ -46,6 +47,9 @@ struct KavSoftView: View {
                         .navigationTitle(kavSoftViewType.rawValue)
                 case .appThemeSwitcher:
                     AppThemeSwitcherView(scheme: scheme)
+                        .navigationTitle(kavSoftViewType.rawValue)
+                case .custumSwipeAction:
+                    SwipeActionsView()
                         .navigationTitle(kavSoftViewType.rawValue)
                 }
             }
