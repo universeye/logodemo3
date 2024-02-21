@@ -10,12 +10,30 @@
       }
     },
     {
+      "identity" : "markupeditor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stevengharris/MarkupEditor.git",
+      "state" : {
+        "revision" : "b23bad6de3d8cb09d719bc711928a6d1f1e945c6",
+        "version" : "0.6.0"
+      }
+    },
+    {
       "identity" : "mobile-sdk-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdin/mobile-sdk-ios.git",
       "state" : {
         "revision" : "30a7f0031b4d1b09512d0c1bb524ba53dd0c93d6",
         "version" : "1.5.2"
+      }
+    },
+    {
+      "identity" : "musadorakit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rryam/MusadoraKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f5f64079a4bd5b815be77cb7cd977756ac374b65"
       }
     },
     {

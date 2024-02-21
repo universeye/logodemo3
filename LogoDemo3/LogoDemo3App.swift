@@ -10,11 +10,12 @@ import SwiftUI
 @main
 struct LogoDemo3App: App {
     @StateObject private var dataController = DataController()
-      
+    @AppStorage("user_theme") private var userTheme: Theme = .systemDefault
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
+                .preferredColorScheme(userTheme.colorScheme)
         }
     }
 }
