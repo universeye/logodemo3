@@ -6,37 +6,74 @@
 //
 
 import SwiftUI
+import IsScrolling
+import AVFoundation
 
 struct CoreDataDemo: View {
     @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
     @Environment(\.managedObjectContext) var moc
+    @State var isScrolling = false
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
+    @AppStorage("systemThemeEnabled") private var systemThemeEnabled  = false
+    @StateObject private var model = DataModel()
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                List(students) { student in
-                    Text(student.name ?? "Unkown")
+        VStack {
+            HStack {
+                CameraView(model: model)
+//                if let thumbnailImage = model.thumbnailImage {
+//                    thumbnailImage
+//                        .scaledToFit()
+//                        .cornerRadius(10)
+//                        .padding()
+//                        .frame(width: 120)
+//                    //                    }
+//                }
+                if let lastPhoto = model.camera.lastPhoto {
+                    Image(uiImage: lastPhoto)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                        .padding()
                 }
-                .listStyle(.plain)
-                
-                Button("Add a random student") {
-                    addARandomStudent()
-                }
-                .buttonStyle(GrowingButton())
-                .padding(.bottom)
             }
-            .navigationTitle("Core Data")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink {
-                        ChangeAppIconView()
-                    } label: {
-                        Image(systemName: "gearshape.2.fill")
-                    }
-
+            Text("Is Scrolling: \(isScrolling.description)")
+                .font(.footnote)
+                .foregroundStyle(.gray)
+            List(students) { student in
+                Text(student.name ?? "Unkown")
+                    .scrollSensor()
+            }
+            .listStyle(.plain)
+            .scrollStatusMonitor($isScrolling, monitorMode: .common)
+            
+            Button("Add a random student") {
+                addARandomStudent()
+            }
+            .buttonStyle(GrowingButton())
+            .padding(.bottom)
+        }
+        .navigationTitle("Core Data")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    ChangeAppIconView(darkModeEnabled: $darkModeEnabled, systemThemeEnabled: $systemThemeEnabled)
+                } label: {
+                    Image(systemName: "gearshape.2.fill")
                 }
+
             }
         }
+//        .onAppear {
+//            AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+//                   if response {
+//                       print("Responese: \(response)")
+//                   } else {
+//                       print("No Responese")
+//                   }
+//               }
+//        }
     }
     
     private func addARandomStudent() {

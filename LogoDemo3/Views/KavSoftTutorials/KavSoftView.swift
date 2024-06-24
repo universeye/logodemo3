@@ -16,6 +16,7 @@ enum KavSoftViewType: String, CaseIterable {
     case complexAnimationSynchronizedScrollViews
     case appThemeSwitcher
     case custumSwipeAction
+    case jsonParsingwithPagination
 }
 
 struct KavSoftView: View {
@@ -50,6 +51,9 @@ struct KavSoftView: View {
                         .navigationTitle(kavSoftViewType.rawValue)
                 case .custumSwipeAction:
                     SwipeActionsView()
+                        .navigationTitle(kavSoftViewType.rawValue)
+                case .jsonParsingwithPagination:
+                    JsonParsingwithPagination()
                         .navigationTitle(kavSoftViewType.rawValue)
                 }
             }
