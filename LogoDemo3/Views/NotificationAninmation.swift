@@ -24,19 +24,34 @@ struct NotificationAnimation: View {
             // Simulated notification stack. Opacity and offset (position) are altered by the animation
             ZStack {
                 // Lower notification
-                self.notificationView(avatarPath: "memoji-3", title: "Netflix", subtitle: "1 day until renew", time: "4d")
+                self.notificationView(
+                    avatarPath: "memoji-3",
+                    title: "Netflix",
+                    subtitle: "1 day until renew",
+                    time: "4d"
+                )
                     .offset(CGSize(width: 0, height: self.shouldAnimate ? -30 : 100))
                     .scaleEffect(0.8)
                     .opacity(self.shouldAnimate ? 0.8 : 0)
                 
                 // Middle notification
-                self.notificationView(avatarPath: "memoji-6", title: "Youtube Premium", subtitle: "3 days until renew", time: "4h")
+                self.notificationView(
+                    avatarPath: "memoji-6",
+                    title: "Youtube Premium",
+                    subtitle: "3 days until renew",
+                    time: "4h"
+                )
                     .offset(CGSize(width: 0, height: self.shouldAnimate ? -80 : 100))
                     .scaleEffect(0.9)
                     .opacity(self.shouldAnimate ? 0.9 : 0)
                 
                 // Top notification
-                self.notificationView(avatarPath: "memoji-1", title: "Apple Music", subtitle: "1 day until renew", time: "now")
+                self.notificationView(
+                    avatarPath: "memoji-1",
+                    title: "Apple Music",
+                    subtitle: "1 day until renew",
+                    time: "now"
+                )
                     .offset(CGSize(width: 0, height: self.shouldAnimate ? -130 : 100))
                     .opacity(self.shouldAnimate ? 1 : 0)
             }
@@ -69,6 +84,19 @@ struct NotificationAnimation: View {
             withAnimation(Animation.bouncy(duration: 0.7).delay(0.5)) {
                 self.shouldAnimate = true
             }
+            
+            // 開啟三條執行緒，並觀察是都參照到同一個實例
+           DispatchQueue.global().async {
+               DataAccessObject.sharedInstance.loadDatas()
+           }
+           
+           DispatchQueue.global().async {
+               DataAccessObject.sharedInstance.loadDatas()
+           }
+           
+           DispatchQueue.global().async {
+               DataAccessObject.sharedInstance.loadDatas()
+           }
         })
     }
     

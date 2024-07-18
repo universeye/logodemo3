@@ -71,6 +71,7 @@
 		BF8E0CE22B84A99400E5C2FC /* SUMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E0CE12B84A99400E5C2FC /* SUMColor.swift */; };
 		BF8E1CBC2B80A78F00BB0DDC /* ImageRecognitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E1CBB2B80A78F00BB0DDC /* ImageRecognitionDemo.swift */; };
 		BF9894CA2BAD1C0400C2DF1F /* MeatballView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9894C92BAD1C0400C2DF1F /* MeatballView.swift */; };
+		BF9A70952C3D3DDD00D68D0C /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A70942C3D3DDD00D68D0C /* DataAccessObject.swift */; };
 		BF9D82302BE4BC010061F251 /* SwiftUIGridAniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D822F2BE4BC010061F251 /* SwiftUIGridAniView.swift */; };
 		BFA10FE52BA5C79100FE6733 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BFA10FE42BA5C79100FE6733 /* Alamofire */; };
 		BFA10FE72BA5C79100FE6733 /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = BFA10FE62BA5C79100FE6733 /* Kanna */; };
@@ -220,6 +221,7 @@
 		BF8E0CE12B84A99400E5C2FC /* SUMColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUMColor.swift; sourceTree = "<group>"; };
 		BF8E1CBB2B80A78F00BB0DDC /* ImageRecognitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognitionDemo.swift; sourceTree = "<group>"; };
 		BF9894C92BAD1C0400C2DF1F /* MeatballView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatballView.swift; sourceTree = "<group>"; };
+		BF9A70942C3D3DDD00D68D0C /* DataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
 		BF9D822F2BE4BC010061F251 /* SwiftUIGridAniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridAniView.swift; sourceTree = "<group>"; };
 		BFA2C48C293EF92300E98F80 /* KavSoftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavSoftView.swift; sourceTree = "<group>"; };
 		BFA2C48F293EF9BA00E98F80 /* MagnifyingGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassView.swift; sourceTree = "<group>"; };
@@ -642,6 +644,7 @@
 				BF7E14232AC50D7800025D1B /* MultiImagePicker.swift */,
 				BF5ED98E28F8F9BF0014A1F1 /* CustumButtonStyle.swift */,
 				BF8E0CE12B84A99400E5C2FC /* SUMColor.swift */,
+				BF9A70942C3D3DDD00D68D0C /* DataAccessObject.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -955,6 +958,7 @@
 				BFB50ED328FEB52A00BCDA6A /* PhotosPickerDemo.swift in Sources */,
 				BFD6D5752BA0479E0046F3CC /* PhotoView.swift in Sources */,
 				BFE268162B567D4B00D9D23E /* AppThemeSwitcherView.swift in Sources */,
+				BF9A70952C3D3DDD00D68D0C /* DataAccessObject.swift in Sources */,
 				BF7F010D2B749C9400369C50 /* PlayerController.swift in Sources */,
 				BFC8F67E2ABED1C100EC4D8A /* MovableGridView.swift in Sources */,
 				BFC28CD02ADAFE4F00059544 /* PhotosGridVC.swift in Sources */,
